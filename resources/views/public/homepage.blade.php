@@ -22,8 +22,11 @@
   </head>
   <body>
    
-    @include('modul.test')
-   
+    @include('public.module.header')
+    @include('public.module.carousel')
+    @include('public.module.navbar')
+    @include('public.module.services')
+    
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
