@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "uci-styled.less";
 
 // Global Components
 
@@ -83,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
+        font-size: 15px;
 	background-color: @gray-darkest;
 	border-color: transparent;
 	.navbar-brand {
@@ -171,31 +173,31 @@ header {
 	.background-cover;
 	text-align: left;
 	color: white;
-        .logo {
-            padding-top: 40px;
-            margin-bottom: 0px;
-            position: static;    
-        }
+        
         
 	.intro-text {
-                //margin-top: 0px;
+                
 		padding-top: 100px;
 		padding-bottom: 50px;
                 
+                
+                
 		.intro-lead-in {
 			.serif-font;
-                        font-style: normal;
+                        //.heading-font;
+                        //font-style: normal;
 			//font-style: bold;
-			font-size: 22px;
-			line-height: 22px;
-			margin-bottom: 25px;
+                        font-weight: 600;
+			font-size: 20px;
+                        line-height: 20px;
+			margin-bottom: 40px;
 		}
 		.intro-heading {
 			.heading-font;
 			font-weight: 700;
 			font-size: 50px;
 			line-height: 50px;
-			margin-bottom: 25px;
+			margin-bottom: 15px;
 		}
 	}
 }
@@ -203,6 +205,7 @@ header {
 @media(min-width:768px) {
 	header {
 		.intro-text {
+                        
 			padding-top: 300px;
 			padding-bottom: 200px;
 			.intro-lead-in {
@@ -210,14 +213,14 @@ header {
 				font-style: italic;
 				font-size: 40px;
 				line-height: 40px;
-				margin-bottom: 25px;
+				margin-bottom: 75px;
 			}
 			.intro-heading {
 				.heading-font;
 				font-weight: 700;
 				font-size: 75px;
 				line-height: 75px;
-				margin-bottom: 50px;
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -226,7 +229,7 @@ header {
 // Global Section Styles
 
 section {
-    padding: 100px 0;
+    padding: 60px 0 20px ;
     h2.section-heading {
 		font-size: 40px;
 		margin-top: 0;
@@ -238,13 +241,14 @@ section {
 		text-transform: none;
 		font-style: italic;
 		font-weight: 400;
-		margin-bottom: 75px;
+		margin-bottom: 50px;
     }
+   
 }
 
 @media(min-width:768px) {
 	section {
-		padding: 150px 0;
+		padding: 80px 0 20px;
 	}
 }
 

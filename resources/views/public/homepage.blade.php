@@ -26,9 +26,8 @@
   <body>
     @include('public.module.navbar')
     @include('public.module.header')
-    
-    
     @include('public.module.services')
+    @include('public.module.contact')
     
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
