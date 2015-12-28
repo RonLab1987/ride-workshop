@@ -27,8 +27,8 @@
     @include('public.module.navbar')
     @include('public.module.header')
     @include('public.module.services')
+    @include('public.module.contact-form')
     @include('public.module.contact')
-    
       
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
