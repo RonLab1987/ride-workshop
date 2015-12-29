@@ -6,19 +6,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                     <h2 class="section-heading">мобильная ВЕЛОМАСТЕРСКАЯ</h2>
-                    <br>
-                    <p class="lead text-center text-uppercase ">Ремонтируем, настраиваем, производим апгрейд любых велосипедов.<br>
-                        Делаем быстро, качественно, с гарантией на произведенные работы. <br>
-                        Работаем в любом районе города Кирова.<br>
-                        </p>
+                     <!--h2 class="section-heading">ВЕЛОМАСТЕРСКАЯ</h2-->
+                     <!--p class="top-key"><img class=""  src="/image/logo-key-60px.png"></p-->
+                     <p class="lead text-center visible-xs"><img class=""  src="/image/logo-name-35px.png"></p>
+                     <p class="lead text-center visible-lg visible-md visible-sm"><img class=""  src="/image/logo-name-60px.png"></p>
+                     <h3 class="section-subheading text-uppercase">первая мобильная веломастерская в Кирове</h3> 
+                    <p class="lead text-center text-uppercase ">
+                        Ремонтируем, настраиваем, улучшаем  велосипеды.<br>
+                        Работаем во всех районах города Кирова.<br>
+                        Экономим ваше время.<br>
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                    </p>
+                    
                     
                 </div>
         </div>
     </section>        
     
     
-    <section class="bg-light-gray">
+    <section class="bg-light-gray" id='order-variations'>
         <div class="container">
             
             <div class="text-center ">
@@ -39,37 +45,37 @@
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
                     <div class="panel-heading"> 
-                    <h4 class="service-heading">Увозим - Делаем - Привозим</h4>
+                        <h4 class="service-heading">Увозим <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Привозим</h4>
                     </div>
                     <div class="panel-body"
                     <p class="text-muted">Забираем велосипед из любого района Кирова когда вам удобно, производим обслуживание и привозим ваш велосипед туда и когда вам удобно. </p>
                     <hr>
-                    <a href="#" class="btn btn-block  btn-uci-green ">ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
                     <div class="panel-heading"> 
-                    <h4 class="service-heading">Приезжаем - Делаем</h4> 
+                        <h4 class="service-heading">Приезжаем <span class="glyphicon glyphicon-arrow-right"></span> Делаем </h4> 
                     </div>
                     <div class="panel-body"
                     <p class="text-muted">Благодаря нашим навыкам и оборудованию  многие работы можем выполнить непосредственно на месте в течении одного часа.</p>
                     <hr>
-                    <a href="#" class="btn btn-block  btn-uci-green ">ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
                     <div class="panel-heading"> 
-                    <h4 class="service-heading">Отдаете - Делаем - Забираете</h4>
+                    <h4 class="service-heading">Отдаете <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Забираете</h4>
                     </div>
                     <div class="panel-body"
                     <p class="text-muted">Если-же вам удобнее самим привезти велосипед - ждем вас в <a href="">наших точках приема</a>. Сразу произведем диагностику и определим срок исполнения работ. </p>
                     <hr>
                     
-                        <a href="#" class="btn btn-block  btn-uci-green ">ЭТОТ ВАРИАНТ</a>
+                        <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
@@ -79,7 +85,7 @@
                         <a href="#" class="btn btn-block  btn-uci-yellow ">СВОЙ ВАРИАНТ?</a>
                     </div-->
                     <p class="text-center text-uppercase">
-                        <a href="#contact-form">
+                        <a href="#contact-form" class="page-scroll text-uci-green">
                         Всё не то? Напишите как будет удобно вам. <br>
                         <span class="glyphicon glyphicon-menu-down"></span>
                         </a>

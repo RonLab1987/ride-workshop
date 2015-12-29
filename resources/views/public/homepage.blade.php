@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -9,43 +8,17 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ВелоМастерская "КАТАЙ!" г. Киров</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"-->
-    
-    <!-- Custom CSS -->
-    <link href="/agency/css/agency.css" rel="stylesheet">
-    
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    @include('public.module.css-include')
   </head>
   <body>
     @include('public.module.navbar')
     @include('public.module.header')
     @include('public.module.services')
     @include('public.module.contact-form')
+    @include('public.module.command')
     @include('public.module.contact')
       
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
-    <script src="/jquery/dist/jquery.min.js"></script>
-    
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script-->
-    
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="/agency/js/classie.js"></script>
-    <script src="/agency/js/cbpAnimatedHeader.js"></script>
-    
-    
-    <!-- Custom Theme JavaScript -->
-    <script src="/agency/js/agency.js"></script>
+    @include('public.module.js-include')
   
   </body>
 </html>
