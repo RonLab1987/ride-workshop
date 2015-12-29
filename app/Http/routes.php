@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('public.homepage');
+});
+Route::get('/price', function () {
+    return view('public.price-list');
 });
