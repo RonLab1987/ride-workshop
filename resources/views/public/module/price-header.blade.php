@@ -7,7 +7,7 @@
                 <!--div class="intro-lead-in">мы осблуживаем велосипед </div-->
                 
                 <a href="#price-list" class="page-scroll btn btn-xl btn-uci-blue">УЗНАТЬ ПОДРОБНЕЕ</a>
-                <a href="/#contact-form" class="page-scroll btn btn-xl btn-uci-green ">ОФОРМИТЬ ЗАЯВКУ</a>
+                <a href="/#contact-form" class=" btn btn-xl btn-uci-green ">ОФОРМИТЬ ЗАЯВКУ</a>
             </div>
         </div>
 </div>>

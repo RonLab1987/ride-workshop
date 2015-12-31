@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="/">
+                <a class="navbar-brand " href="{!! route('homepage') !!}">
                     <img class="img-responsive" src="/image/logo-key-30px.png">
                 </a>
             </div>
@@ -30,10 +30,10 @@
                         <a class="page-scroll" href="#price-list">#Цены</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="/#contact-data">#Контакты</a>
+                        <a class="" href="{!! route('homepage') !!}#contact-data">#Контакты</a>
                     </li>
                     <li>
-                        <a class="page-scroll  " href="#contact-form">ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
+                        <a class="" href="{!! route('homepage') !!}#contact-form">ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
                     </li>
                     <!--li>
                         <a class="page-scroll" href="#">КИРОВ | 43-45-95</a>
