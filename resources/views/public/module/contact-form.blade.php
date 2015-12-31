@@ -16,34 +16,46 @@
               
               <div class="panel panel-success">
                   <div class="panel-body">
-              <form>
-                  <div class="form-group"
-                  <label class="form-control" for="phone">ваш номер телефона</label>
-                      <input class="form-control input-lg" id="phone" placeholder="сотовый или прямой [обязательно]">
-                  </div>
-                  <div class="form-group"
-                  <label class="form-control" for="name">как к вам обращаться</label>
-                      <input class="form-control input-lg" id="name" placeholder="ваше имя или nickname [желательно]">
-                  </div>
-                  <div class="form-group"
-                  <label class="form-control" for="comment">комментарий, пожелание или вопрос</label>
-                      <textarea type="" class="form-control input-lg" id="comment" placeholder="например время, когда вам перезвонить, или адрес, куда подъехать... "></textarea>
-                      
-                  </div>
-                  <input type="button" class="btn btn-lg btn-uci-green btn-block" value="ОТПРАВИТЬ ЗАЯВКУ">
-                         
+                                 
+                    {!! Form::open(['route'=>'storeOrder']) !!}
+                        <div class="form-group"
+                            <label class="form-control" for="phone">ваш номер телефона</label>
+                            
+                            <div class="radio">
+                                <label class="radio-inline">
+                                    <input type="radio" id='phone-type-mobile' name='phone-type' checked="true">
+                                    мобильный                                        
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name='phone-type' id='phone-type-city' >
+                                    прямой / городской                                        
+                                </label>
+                            </div>
+                            
+                            <input class="form-control input-lg" id="phone" name="phone" placeholder="сотовый или прямой [обязательно]" required="укажите телефон">
+                        </div>
+                        <div class="form-group"
+                        <label class="form-control" for="name">как к вам обращаться</label>
+                            <input class="form-control input-lg" id="name" name="name" placeholder="ваше имя [обязательно]" required="укажите ваше имя">
+                        </div>
+                        <div class="form-group"
+                        <label class="form-control" for="comment">комментарий, пожелание или вопрос</label>
+                            <textarea type="" rows="4" class="form-control input-lg" id="comment" name="comment" placeholder="например время, когда вам перезвонить, или адрес, куда подъехать... "></textarea>
+                        </div>
+                    <button type="submit" id='submit' class="btn btn-lg btn-uci-green btn-block" >ОТПРАВИТЬ ЗАЯВКУ</button> 
+                    {!! Form::close() !!}
+                
                   <br>
-                  <div class="text-center text-uppercase">
-                      
-                      <a href="#contact-data" class="page-scroll  ">
+                  <div class="text-center text-uppercase">    
+                    <a href="#contact-data" class="page-scroll  ">
                         Или позвоните нам  <br>
                         <span class="glyphicon glyphicon-phone"></span> 43-45-95<br>
-                        </a>
+                    </a>
                   </div> 
               
                   </div>
               </div>
-              </form>
+              
                 <p class="lead  text-uppercase text-white text-center"><br>Отправьте заявку и Мы перезвоним вам в течении пары минут для уточнения деталей.</p>
                     
                 <!--p class="text-center text-uppercase lead ">

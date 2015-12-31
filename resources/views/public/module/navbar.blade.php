@@ -28,8 +28,9 @@
                     </li>
                     
                     <li>
-                        <a class="" href="price">#Цены</a>
+                        <a class="" href="{!! route('priceList') !!}">#Цены</a>
                     </li>
+                    
                     <li>
                         <a class="page-scroll" href="#command">#Команда</a>
                     </li>
