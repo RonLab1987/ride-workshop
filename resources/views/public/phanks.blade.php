@@ -13,12 +13,12 @@
   <body class="bg-darkest-gray" >
     @include('public.module.price-navbar')
     
-    <section id='phanks'>
+    <section id='phanks' style="padding-top: 70px">
     <div class="container">
         <div class="row">
             <p class="lead text-center text-uppercase text-white">
-                спасибо тебе, о любимый клиент <br>
-                {!! $name !!}
+                {!! $name !!}, спасибо за тест.<br>
+                +100 к вашей карме ;)
             </p>
         </div>
     </div>

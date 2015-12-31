@@ -46,7 +46,7 @@
                     <div class="panel-body"
                     <p class="text-muted">Забираем велосипед из любого района Кирова, производим обслуживание, привозим ваш велосипед туда и когда вам удобно. </p>
                     <hr>
-                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-1'>ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
                     <div class="panel-body"
                     <p class="text-muted">С нашими навыкам и оборудованием многие работы можем выполнить прямо на месте в течении одного часа.</p>
                     <hr>
-                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-2'>ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
@@ -68,10 +68,10 @@
                     <h4 class="service-heading">Отдаете <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Забираете</h4>
                     </div>
                     <div class="panel-body"
-                    <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="">наших точках приема</a>. Оформите заявку и мы договормся о времени    . </p>
+                    <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="">наших точках приема</a>. Оформите заявку и мы договоримся о времени    . </p>
                     <hr>
                     
-                        <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll">ЭТОТ ВАРИАНТ</a>
+                        <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-3'>ЭТОТ ВАРИАНТ</a>
                     </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                     </p>
                    <br>
                     <p class="text-center text-uppercase">
-                        <a href="#contact-form" class="page-scroll text-uci-green">
+                        <a href="#contact-form" class="page-scroll text-uci-green" id='order-type-4'>
                         Всё не то? Напишите как будет удобно вам. <br>
                         <span class="glyphicon glyphicon-menu-down"></span>
                         </a>

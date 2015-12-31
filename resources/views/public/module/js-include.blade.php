@@ -1,6 +1,8 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script-->
     <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/jquery/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    
     
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -14,4 +16,5 @@
     
     <!-- Custom Theme JavaScript -->
     <script src="/agency/js/agency.js"></script>
+    <script src="/agency/js/contact-form-controll.js"></script>
 
