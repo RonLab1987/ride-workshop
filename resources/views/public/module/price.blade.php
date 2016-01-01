@@ -379,7 +379,7 @@
                 </tbody>
                 </table>
                 
-                <p class="lead">ВЕЛОКОПЬЮТЕР</p>
+                <p class="lead">ВЕЛОКОМПЬЮТЕР</p>
                 <table class="table table-striped">
                 <tbody>
                 <tr>

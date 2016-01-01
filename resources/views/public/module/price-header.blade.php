@@ -10,4 +10,4 @@
                 <a href="/#contact-form" class=" btn btn-xl btn-uci-green ">ОФОРМИТЬ ЗАЯВКУ</a>
             </div>
         </div>
-</div>>
+</div>

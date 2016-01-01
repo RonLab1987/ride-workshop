@@ -8,7 +8,7 @@
                 
                 
                 <a href="#services" class="page-scroll btn btn-xl btn-uci-blue">УЗНАТЬ ПОДРОБНЕЕ</a>
-                <a href="#contact-form" class="page-scroll btn btn-xl btn-uci-green ">ОФОРМИТЬ ЗАЯВКУ</a>
+                <a href="#contact-form" class="page-scroll btn btn-xl btn-uci-green ">  1 КЛИК ДО МАСТЕРСКОЙ  <span class="glyphicon glyphicon-chevron-right "></span></a>
             </div>
         </div>
 </header>
