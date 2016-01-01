@@ -24,13 +24,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Услуги</a>
+                        <a class="page-scroll hidden-sm" href="#services">Услуги</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#options">опции</a>
+                        <a class="page-scroll hidden-sm" href="#options">опции</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#command">Команда</a>
+                        <a class="page-scroll hidden-sm" href="#command">Команда</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact-data">Контакты</a>

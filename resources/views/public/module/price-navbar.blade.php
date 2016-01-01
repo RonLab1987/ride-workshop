@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class=" page-scroll navbar-brand" href="#page-top">
+                <a class=" navbar-brand" href="{!! route('homepage') !!}">
                     <img class="img-responsive" src="/image/logo-key-30px.png">
                 </a>
             </div>
