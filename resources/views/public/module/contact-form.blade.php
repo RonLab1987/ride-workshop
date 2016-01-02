@@ -28,7 +28,7 @@
                                 </label>
                                 <label class="radio-inline">
                                     <input type="radio" name='phone-type' id='phone-type-city' >
-                                    прямой / городской                                        
+                                    городской                                        
                                 </label>
                             </div>
                             
