@@ -32,7 +32,12 @@
                                 </label>
                             </div>
                             
-                            <input class="form-control input-lg" id="phone" name="phone" placeholder="сотовый или прямой [обязательно]" required="укажите телефон">
+                            <div class="input-group">
+                                <div class="input-group-addon" id="phone-addon"></div>
+                                <input class="form-control input-lg" id="phone" name="phone" placeholder="сотовый или прямой [обязательно]" required="укажите телефон">
+                                
+                            </div>
+                            <span id="phone-example" class="text-muted"></span>
                         </div>
                         <div class="form-group"
                         <label class="form-control" for="name">как к вам обращаться</label>
