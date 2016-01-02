@@ -16,6 +16,7 @@
                         Работаем во всех районах города Кирова.<br>
                         Экономим ваше время.<br><br>
                         <span class="glyphicon glyphicon-menu-down"></span>
+                        <!--a href="#options">опции <br><span class="glyphicon glyphicon-menu-down"></span></a-->
                     </p>
                     
                     
@@ -24,14 +25,14 @@
     </section>        
     
     
-    <section class="bg-light-gray" id='order-variations'>
+    <section class="bg-light-gray" id='options'>
         <div class="container">
             
             <div class="text-center ">
-                <h2 class="section-heading">ценим ваше время</h2>
+                    <h2 class="section-heading">вы выбираете</h2>
                 
                 <h3 class="section-subheading text-muted">
-                        Какой вариант лучший для вас?
+                        какой вариант лучший для вас.
                 </h3>
             </div>
             
@@ -65,10 +66,10 @@
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
                     <div class="panel-heading"> 
-                    <h4 class="service-heading">Отдаете <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Забираете</h4>
+                    <h4 class="service-heading">Отдаёте <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Забираете</h4>
                     </div>
                     <div class="panel-body"
-                    <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="">наших точках приема</a>. Оформите заявку и мы договоримся о времени    . </p>
+                    <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="#contact-data">наших точках приема</a>. Оформите заявку и мы договоримся о времени. </p>
                     <hr>
                     
                         <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-3'>ЭТОТ ВАРИАНТ</a>
@@ -78,7 +79,7 @@
                   </div>
                 <div class="row">
                     <p class="text-center text-muted">
-                        При приёме на обслуживание произодим полную диагностику велосипеда, обозначаем примерную стоимость и срок выполнения работ. 
+                        При приёме на обслуживание произведём полную диагностику велосипеда, обозначим примерную стоимость и срок выполнения работ. 
                     </p>
                    <br>
                     <p class="text-center text-uppercase">

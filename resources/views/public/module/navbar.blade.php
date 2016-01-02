@@ -24,21 +24,26 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">#Услуги</a>
+                        <a class="page-scroll hidden-sm" href="#services">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll hidden-sm" href="#options">опции</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll hidden-sm" href="#command">Команда</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact-data">Контакты</a>
                     </li>
                     
-                    <li>
-                        <a class="" href="{!! route('priceList') !!}">#Цены</a>
-                    </li>
+                    <li class="visible-lg visible-md visible-sm"><a>I</a></li>
+                    <li role="separator" class="divider"></li>
                     
                     <li>
-                        <a class="page-scroll" href="#command">#Команда</a>
+                        <a class="" href="{!! route('priceList') !!}">Цены</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact-data">#Контакты</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll  " href="#contact-form">ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
+                        <a class="page-scroll " href="#contact-form">ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
                     </li>
                     <!--li>
                         <a class="page-scroll" href="#">КИРОВ | 43-45-95</a>

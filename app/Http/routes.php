@@ -21,5 +21,5 @@ Route::get('/price', function () {
 });
 */
 get('/',['as'=>'homepage','uses'=>'PublicController@index']);
-get('прайс-лист',['as'=>'priceList','uses'=>'PublicController@priceList']);
+get('цены-на-обслуживание',['as'=>'priceList','uses'=>'PublicController@priceList']);
 post ('спасибо',['as'=>'storeOrder', 'uses'=>'PublicController@store']);

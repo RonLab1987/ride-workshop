@@ -12,7 +12,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand " href="{!! route('homepage') !!}">
+                <a class=" navbar-brand" href="{!! route('homepage') !!}">
                     <img class="img-responsive" src="/image/logo-key-30px.png">
                 </a>
             </div>
@@ -20,20 +20,22 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top">#вверх</a>
-                    </li>
-                    <!--li>
-                        <a class="" href="#page-top">#вверх</a>
-                    </li-->
                     <li>
-                        <a class="page-scroll" href="#price-list">#Цены</a>
+                        <a class="page-scroll" href="#price-list">Цены</a>
                     </li>
+                    
+                    <li class="visible-lg visible-md visible-sm"><a>I</a></li>
+                    <li role="separator" class="divider"></li>
+                    
                     <li>
-                        <a class="" href="{!! route('homepage') !!}#contact-data">#Контакты</a>
+                        <a class="" href="{!! route('homepage') !!}"><!--span class="glyphicon glyphicon-home"></span--> ДОМОЙ</a>
                     </li>
                     <li>
-                        <a class="" href="{!! route('homepage') !!}#contact-form">ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
+                        <a class="" href="{!! route('homepage') !!}#contact-data"><!--span class="glyphicon glyphicon-phone"></span--> Контакты </a>
+                    </li>
+                    
+                    <li>
+                        <a class="" href="{!! route('homepage') !!}#contact-form"> ОФОРМИТЬ ЗАЯВКУ <span class="glyphicon glyphicon-send text-uci-green"></span></a>
                     </li>
                     <!--li>
                         <a class="page-scroll" href="#">КИРОВ | 43-45-95</a>
