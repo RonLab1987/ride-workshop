@@ -34,14 +34,14 @@
                             
                             <div class="input-group">
                                 <div class="input-group-addon" id="phone-addon"></div>
-                                <input class="form-control input-lg" id="phone" name="phone" placeholder="сотовый или прямой [обязательно]" required="укажите телефон">
+                                <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="" required>
                                 
                             </div>
                             <span id="phone-example" class="text-muted"></span>
                         </div>
                         <div class="form-group"
                         <label class="form-control" for="name">как к вам обращаться</label>
-                            <input class="form-control input-lg" id="name" name="name" placeholder="ваше имя [обязательно]" required="укажите ваше имя">
+                            <input class="form-control input-lg" id="name" name="name" placeholder="ваше имя [обязательно]" required>
                         </div>
                         <div class="form-group"
                         <label class="form-control" for="comment">комментарий, пожелание или вопрос</label>
