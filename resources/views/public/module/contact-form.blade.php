@@ -34,7 +34,7 @@
                             
                             <div class="input-group">
                                 <div class="input-group-addon" id="phone-addon"></div>
-                                <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="" required>
+                                <input class="form-control input-lg" type="number" id="phone" name="phone" placeholder="" required>
                                 
                             </div>
                             <span id="phone-example" class="text-muted"></span>
