@@ -16,5 +16,5 @@
     
     <!-- Custom Theme JavaScript -->
     <script src="/agency/js/agency.js"></script>
-    <script src="/agency/js/contact-form-controll.js"></script>
+    <!--script src="/agency/js/contact-form-controll.js"></script-->
 

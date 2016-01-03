@@ -11,7 +11,10 @@
               <h2 class="section-heading text-center text-white">заявка в 1 клик</h2>
               <!--p class="lead  text-uppercase text-white "><br>Всего 1 клик чтобы сделать заказ или задать вопрос. Мы перезвоним вам в течении пары минут для уточнения деталей.</p-->
               <p class="lead  text-uppercase text-white text-center ">Всего 1 клик чтобы сделать заказ или задать вопрос. </p>
-                
+              
+              @foreach($validateErrors as $error)
+                <p class="lead  text-uppercase text-white text-center "> {{ $error }} </p>
+             @endforeach
                 
               
               <div class="panel panel-success">

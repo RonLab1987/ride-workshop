@@ -137,6 +137,7 @@ return [
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
 		  Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+                  Propaganistas\LaravelPhone\LaravelPhoneServiceProvider::class,
 
         /*
          * Application Service Providers...
