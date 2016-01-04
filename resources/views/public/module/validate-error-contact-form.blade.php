@@ -14,22 +14,23 @@
                    {{ count($validateErrors) }} небольшие ошибки 
                   @endif
               </p>
-              <p class="lead  text-center text-white">
-                <?php $i=0; ?>  
-                @foreach($validateErrors as $error)
-                   <br> {{++$i}}. {{ $error }} 
-                @endforeach
-              </p>  
-              <p class="lead  text-center text-white">
-              
-                
-              </p> 
+               
               <p class=" text-uppercase text-white text-center">
                   Исправьте и отправьте заявку.
               </p>
               
               <div class="panel panel-success">
                   <div class="panel-body">
+                      
+                      <div class="alert alert-warning">
+                          <!--p class="text-uppercase text-uci-black"-->
+                            <?php $i=0; ?>  
+                            @foreach($validateErrors as $error)
+                            <p> {{++$i}}. {{ $error }} </p>
+                            @endforeach
+                          <!--/p--> 
+                      </div>
+                      
                                  
                     {!! Form::open(['route'=>'orderValidate']) !!}
                         <div class="form-group">
