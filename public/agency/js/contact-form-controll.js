@@ -1,5 +1,5 @@
 
-$('document').ready(setPhoneMask);
+//$('document').ready(setPhoneMask);
 $('#phone-type-mobile').click(setPhoneMask);
 $('#phone-type-city').click(setPhoneMask);
 
@@ -10,22 +10,23 @@ function setPhoneMask(){
     $('#phone').val('');
     
     if (!$('#phone-type-city').prop('checked')){
-       var pattern ="[0-9]{10}";
-       var placeholder = 'Сотовый [последние 10 цифр]';
-       var phoneAddone= '+7';
-       var phoneExample= 'Например: 9120004321';
+       //var pattern ="[0-9]{10}";
+       //var placeholder = 'Ваш телефон [обязательно]';
+       //var phoneAddone= '+7';
+       //var phoneExample= 'Например: 912 000-43-21';
    }
    else{
-       var pattern ="[0-9]{6}";
-       var placeholder = 'Городской [последние 6 цифр]';
-       var phoneAddone= '+7(8332)';
-       var phoneExample= 'Например: 434595';
+       //var pattern ="[0-9]{6}";
+       //var placeholder = 'Код города + номер телефона';
+       //var phoneAddone= '+7(8332)';
+       //var phoneExample= 'Например: +7(833)2 43-45-95';
+       $('#phone').val('+7(833)2 ');
    }
     
-    $('#phone').prop('pattern',pattern);
-    $("#phone").prop('placeholder', placeholder);
-    $("#phone-addon").html(phoneAddone);
-    $("#phone-example").html(phoneExample);
+    //$('#phone').prop('pattern',pattern);
+    //$("#phone").prop('placeholder', placeholder);
+    //$("#phone-addon").html(phoneAddone);
+    //$("#phone-example").html(phoneExample);
 }
 
 

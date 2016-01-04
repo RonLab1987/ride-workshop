@@ -40,12 +40,17 @@ class PublicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function inputValidator(PublicOrder $publicOrder,Request $request)
-    {
-        $input = $request->only('phone','name');
+    {   //dd($request->all());
+       //$input = $request->only('phone','name');
         $rules = array(
             'name' => 'required',
             'phone' => array('required','phone:RU'));
-        $validation = Validator::make($request->all(), $rules);
+        $messages = array(
+            'name.required' => 'Вы не указали ваше имя',
+            'phone.required' => 'Вы не указали ваш телефон',
+            'phone.phone' => 'Неверный формат телефона.'
+        );
+        $validation = Validator::make($request->all(), $rules, $messages);
         
         if($validation->fails()){
             //$er = $validation->messages();
@@ -70,7 +75,7 @@ class PublicController extends Controller
     public function validateError(Request $request)
     {   //dd($request->old());
         return view('public.validate-error',['oldInput'=>$request->old()]);
-        //echo 'Ошибкама насяльника? Тогда ты всё верно попал, вээлком.';
+        
     }
 
     

@@ -15,11 +15,12 @@
         //var_dump($errors->all()) ;
         //var_dump($oldInput);
         //foreach ($errors->)
+        
         $validateErrors = $errors->all();
     ?>
-      
+    @include('public.module.validate-error-navbar')  
     @include('public.module.validate-error-contact-form')
-    
+    @include('public.module.contact')
     
     
     

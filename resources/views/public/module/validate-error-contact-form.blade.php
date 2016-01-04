@@ -1,78 +1,93 @@
-
-<section id="contact-form"  class="contact-form">
+<?php /*var_dump($oldInput)*/ ?>
+<section id="contact-form"  class="validate-error-contact-form">
     
-        <!--div class="row text-center">
-            <h2 class="section-heading">один клик <small>или</small> один звонок</h2>
-            <h3 class="section-subheading">Веломастерская всего в 1 клике или 1 звонке. </h3>
-        </div-->  
+        
         <div class="row">  
           <div class="container">  
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0">
-              <h2 class="section-heading text-center text-white">заявка в 1 клик</h2>
-              <!--p class="lead  text-uppercase text-white "><br>Всего 1 клик чтобы сделать заказ или задать вопрос. Мы перезвоним вам в течении пары минут для уточнения деталей.</p-->
-              <p class="lead  text-uppercase text-white text-center ">Всего 1 клик чтобы сделать заказ или задать вопрос. </p>
+              <h2 class="section-heading text-center text-white">Oops!</h2> 
+              <p class="text-center text-white text-uppercase">
+                  Есть
+                  @if(count($validateErrors)==1)
+                   одна небольшая ошибка
+                  @else
+                   {{ count($validateErrors) }} небольшие ошибки 
+                  @endif
+              </p>
+              <p class="lead  text-center text-white">
+                <?php $i=0; ?>  
+                @foreach($validateErrors as $error)
+                   <br> {{++$i}}. {{ $error }} 
+                @endforeach
+              </p>  
+              <p class="lead  text-center text-white">
               
-              @foreach($validateErrors as $error)
-                <p class="lead  text-uppercase text-white text-center "> {{ $error }} </p>
-             @endforeach
                 
+              </p> 
+              <p class=" text-uppercase text-white text-center">
+                  Исправьте и отправьте заявку.
+              </p>
               
               <div class="panel panel-success">
                   <div class="panel-body">
                                  
                     {!! Form::open(['route'=>'orderValidate']) !!}
-                        <div class="form-group"
-                            <label class="form-control" for="phone">ваш номер телефона</label>
+                        <div class="form-group">
+                            <!--label class="form-control" for="phone">ваш номер телефона</label-->
                             
                             <div class="radio">
-                                <!--label class="radio-inline">
-                                    <input type="radio" id='phone-type-mobile' name='phone-type' checked="true">
-                                    мобильный                                        
+                                <label class="radio-inline">
+                                    <input type="radio"  id='phone-type-mobile' name='phone-type' checked="true">
+                                    <span class="text-uci-green">мобильный</span>                                        
                                 </label>
                                 <label class="radio-inline">
-                                    <input type="radio" name='phone-type' id='phone-type-city' >
-                                    городской                                        
-                                </label-->
+                                    <input type="radio"  name='phone-type' id='phone-type-city' >
+                                    <span class="text-uci-blue">городской</span>                                        
+                                </label>
                             </div>
                             
-                            <!--div class="input-group">
-                                <div class="input-group-addon" id="phone-addon"></div-->
-                                <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="ваш сотовый или городской" >
-                                
-                            <!--/div-->
-                            <span id="phone-example" class="text-muted">например: 9120001234, 8(912)000-12-34 или 43-45-95</span>
+                            <small id="phone-example" class="text-muted">пример: 912 000-43-21 / +7(833)2 43-45-95</small>
+                            <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="Ваш телефон" value="{!! $oldInput['phone'] !!}" >
+                            
+                            <!--span id="phone-example" class="text-muted">Например: 912 000-43-21 или +7(833)2 43-45-95</span-->
                         </div>
-                        <div class="form-group"
-                        <label class="form-control" for="name">как к вам обращаться</label>
-                            <input class="form-control input-lg" id="name" name="name" placeholder="ваше имя [обязательно]" >
+                    <hr>
+                        <div class="form-group">
+                        <!--label class="form-control hidden sr-only" for="name">как к вам обращаться</label-->
+                            <small id="" class="text-muted">пример: Люк Скайуокер</small>
+                            <input class="form-control input-lg" id="name" name="name" value="{!! $oldInput['name'] !!}" placeholder="Ваше имя" >
+                            
                         </div>
-                        <div class="form-group"
-                        <label class="form-control" for="comment">комментарий, пожелание или вопрос</label>
-                            <textarea type="" rows="4" class="form-control input-lg" id="comment" name="comment" placeholder="например время, когда вам перезвонить, или адрес, куда подъехать... "></textarea>
+                    <hr>
+                        <div class="form-group">
+                        <!--label class="form-control" for="comment">комментарий, пожелание или вопрос</label-->
+                        <small id="" class="text-muted">пример:  "<span class="hidden-xs">Привет из пустынь Татуина.</span> А фэт-байки делаете?"</small>
+                        <textarea type="" rows="4" class="form-control input-lg" id="comment" name="comment" placeholder="Ваш вопрос, пожелание или ,например, адрес, куда подъехать за велосипедом... ">{!!$oldInput['comment']!!}</textarea>
+                        
+                            
                         </div>
                     <button type="submit" id='submit' class="btn btn-lg btn-uci-green btn-block" >ОТПРАВИТЬ ЗАЯВКУ</button> 
                     {!! Form::close() !!}
                 
                   <br>
-                  <div class="text-center text-uppercase">    
-                    <a href="#contact-data" class="page-scroll  ">
+                  <div class=" ">    
+                    <!--a href="#contact-data" class="page-scroll  ">
                         Или позвоните нам  <br>
                         <span class="glyphicon glyphicon-phone"></span> 43-45-95<br>
-                    </a>
+                    </a-->
+                    <p class="text-muted text-center text-uppercase ">отправьте заявку и мы перезвоним для уточнения деталей.</p>
                   </div> 
               
                   </div>
               </div>
               
-                <p class="lead  text-uppercase text-white text-center"><br>Отправьте заявку и Мы перезвоним вам в течении пары минут для уточнения деталей.</p>
+                <!--p class="lead  text-uppercase text-white text-center"><br>Отправьте заявку и мы перезвоним для уточнения деталей.</p-->
+                <p class="lead  text-uppercase text-white text-center">
+                    <br>Или позвоните нам  <br>
+                    <span class="glyphicon glyphicon-phone"></span> 43-45-95<br>
+                </p>
                     
-                <!--p class="text-center text-uppercase lead ">
-                      <br>
-                      <a href="#contact-data" class="page-scroll text-white">
-                        Или позвоните нам  <br>
-                        <span class="glyphicon glyphicon-menu-down"></span>
-                        </a>
-                </p-->     
+                    
           </div>
         </div>
         </div>
