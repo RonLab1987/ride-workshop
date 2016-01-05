@@ -9,14 +9,12 @@
               <p class="text-center text-white text-uppercase">
                   Есть
                   @if(count($validateErrors)==1)
-                   одна небольшая ошибка
+                   одна небольшая ошибка. <br> Исправьте её и отправьте заявку.
                   @else
-                   {{ count($validateErrors) }} небольшие ошибки 
+                   {{ count($validateErrors) }} небольшие ошибки. <br> Исправьте их и отправьте заявку.
                   @endif
-              </p>
-               
-              <p class=" text-uppercase text-white text-center">
-                  Исправьте и отправьте заявку.
+                  
+                  
               </p>
               
               <div class="panel panel-success">
@@ -36,7 +34,7 @@
                         <div class="form-group">
                             <!--label class="form-control" for="phone">ваш номер телефона</label-->
                             
-                            <div class="radio">
+                            <!--div class="radio">
                                 <label class="radio-inline">
                                     <input type="radio"  id='phone-type-mobile' name='phone-type' checked="true">
                                     <span class="text-uci-green">мобильный</span>                                        
@@ -45,7 +43,7 @@
                                     <input type="radio"  name='phone-type' id='phone-type-city' >
                                     <span class="text-uci-blue">городской</span>                                        
                                 </label>
-                            </div>
+                            </div-->
                             
                             <small id="phone-example" class="text-muted">пример: 912 000-43-21 / +7(833)2 43-45-95</small>
                             <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="Ваш телефон" value="{!! $oldInput['phone'] !!}" >

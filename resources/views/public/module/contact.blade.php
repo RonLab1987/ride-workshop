@@ -7,7 +7,7 @@
         <div class="row">
             
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right ">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right ">
                   <p class="">ЗВОНИТЕ</p>
                   <p class="text-muted"> Каждый день с 10 до 21.</p>
                   <p class="lead"><span class="glyphicon glyphicon-phone text-uci-green"></span> 43-45-95</p>
@@ -27,13 +27,14 @@
                   <hr class="visible-xs">
             </div>
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
-               <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=bJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script>
+            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs pull-right">
+               <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=bJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ&width=320&height=400&lang=ru_RU&sourceType=constructor" alt=""/> 
+               <!--script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=bJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script-->
                <hr class="visible-xs">
             </div>
             
             
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-left">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
 
                 <!-- VK Widget -->
