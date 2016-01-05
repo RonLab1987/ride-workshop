@@ -19,7 +19,7 @@
               <div class="panel panel-success">
                   <div class="panel-body">
                      
-                     <div class="alert alert-success " role="alert" id="contact-form-alert"> 
+                     <div class="alert alert-success hidden" role="alert" id="contact-form-alert"> 
                          <p class="text-center text-uppercase" id="contact-form-message"></p>
                          <p class="text-center text-lowercase" id="contact-form-submessage"></p>
                          <p class="text-right"> <a href="#contact-form" class="text-muted " id='order-type-0'><small>отменить выбор</small></a></p>
@@ -60,7 +60,7 @@
                             
                         </div>
                         
-                    <input id="order-type" name="order-type" value="не выбран" >
+                    <input id="order-type" name="order-type" value="не выбран" hidden="">
                         
                     <button type="submit" id='submit' class="btn btn-lg btn-uci-green btn-block" >ОТПРАВИТЬ ЗАЯВКУ</button>
                 {!! Form::close() !!}
