@@ -47,7 +47,7 @@
                     <div class="panel-body"
                     <p class="text-muted">Забираем велосипед из любого района Кирова, производим обслуживание, привозим ваш велосипед туда и когда вам удобно. </p>
                     <hr>
-                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-1'>ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-1'>ВЫБРАТЬ</a>
                     </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                     <div class="panel-body"
                     <p class="text-muted">С нашими навыкам и оборудованием многие работы можем выполнить прямо на месте в течении одного часа.</p>
                     <hr>
-                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-2'>ЭТОТ ВАРИАНТ</a>
+                    <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-2'>ВЫБРАТЬ</a>
                     </div>
                     </div>
                 </div>
@@ -72,14 +72,15 @@
                     <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="#contact-data">наших точках приема</a>. Оформите заявку и мы договоримся о времени. </p>
                     <hr>
                     
-                        <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-3'>ЭТОТ ВАРИАНТ</a>
+                        <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-3'>ВЫБРАТЬ</a>
                     </div>
                     </div>
                 </div>
                   </div>
                 <div class="row">
                     <p class="text-center text-muted">
-                        При приёме на обслуживание произведём полную диагностику велосипеда, обозначим примерную стоимость и срок выполнения работ. 
+                        При приёме на обслуживание произведём полную диагностику велосипеда, обозначим примерную стоимость и срок выполнения работ.<br>
+                        Оплата по факту произведённых работ.
                     </p>
                    <br>
                     <p class="text-center text-uppercase">

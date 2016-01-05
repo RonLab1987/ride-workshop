@@ -20,7 +20,7 @@
               <div class="panel panel-success">
                   <div class="panel-body">
                       
-                      <div class="alert alert-warning">
+                      <div class="alert alert-danger">
                           <!--p class="text-uppercase text-uci-black"-->
                             <?php $i=0; ?>  
                             @foreach($validateErrors as $error)
@@ -31,6 +31,7 @@
                       
                                  
                     {!! Form::open(['route'=>'orderValidate']) !!}
+                        
                         <div class="form-group">
                             <!--label class="form-control" for="phone">ваш номер телефона</label-->
                             
@@ -65,6 +66,9 @@
                         
                             
                         </div>
+                    
+                        <input id="order-type" name="order-type" value="{!! $oldInput['order-type'] !!}" hidden="">
+                    
                     <button type="submit" id='submit' class="btn btn-lg btn-uci-green btn-block" >ОТПРАВИТЬ ЗАЯВКУ</button> 
                     {!! Form::close() !!}
                 
