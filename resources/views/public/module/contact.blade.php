@@ -4,54 +4,61 @@
     <div class="container">    
         <h2 class="section-heading text-center text-uci-black">контакты</h2>
         <h3 class="section-subheading text-center">всегда на связи. </h3>
+        
         <div class="row">
-            
-            
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-right ">
-                  <p class="">ЗВОНИТЕ</p>
-                  <p class="text-muted"> Каждый день с 10 до 21.</p>
-                  <p class="lead"><span class="glyphicon glyphicon-phone text-uci-green"></span> 43-45-95</p>
-                  
-                  <p class="">ПИШИТЕ</p>
-                  <p class="text-muted">В любое время</p>
-                  <p class=""><a href="#contact-form" class="page-scroll"><span class="glyphicon glyphicon-plane text-uci-green"></span> на сайте</a></p>
-                  <p class=""><a href="https://vk.com/ron_vk" target="_blank"><span class="glyphicon glyphicon-share "></span> ВКонтакте</a></p>
-                  
-                  <p class="">ПРИВОЗИТЕ</p>
-                  <p class="text-muted">
-                    Необходимо договориться о времени.<br>
-                    <a href="#contact-form" class="page-scroll">Оформите заявку на сайте </a> или по телефону.
-                  </p>
-                  <p class=""> <span class="glyphicon glyphicon-map-marker text-uci-green"></span> Киров, ул. Космонавта Волкова, д. 12</p>
-                  <p class=""> <span class="glyphicon glyphicon-map-marker text-uci-blue"></span> Киров, ул. Ломоносова, д. 29</p>
-                  <hr class="visible-xs">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 col-sm-offset-1 col-md-offset-0 ">
+                <address>
+                    <p>
+                        <span class="text-muted"><small><em>позвонить</em></small></span><br>
+                        <span class=""><small>Каждый день с 10 до 21.</small></span><br>
+                        <span class="lead"><span class="glyphicon glyphicon-phone text-uci-green"></span> 43-45-95</span>&nbsp;&nbsp;<span>[основной]</span><br>
+                        <span class="lead"><span class="glyphicon glyphicon-phone text-uci-blue"></span> 8(912) 337-07-70</span>
+                    </p>
+                    <p>
+                        <span class="text-muted"><small><em>написать</em></small></span><br>
+                        <!--span class=""><small>когда вам угодно</small></span><br-->
+                        <span><a href="#contact-form" class="page-scroll"><span class="glyphicon glyphicon-plane text-uci-green"></span> На сайте </a></span>
+                        &nbsp;
+                        <span><a href="https://vk.com/ron_vk" target="_blank"> <span class="glyphicon glyphicon-share "></span> ВКонтакте</a></span>
+                    </p>
+                </address>
             </div>
             
-            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs pull-right">
-               <img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=bJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ&width=320&height=400&lang=ru_RU&sourceType=constructor" alt=""/> 
-               <!--script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=bJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ&width=100%&height=400&lang=ru_RU&sourceType=constructor"></script-->
-               <hr class="visible-xs">
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 ">
+                <address>
+                    <p>
+                        <span class="text-muted"><small><em>приехать</em></small></span><br>
+                        <span ><small>
+                            Необходимо договориться о времени.<br>
+                            <a href="#contact-form" class="page-scroll">Оформите заявку на сайте </a> или по телефону.</small>
+                        </span>
+                    </p>
+                    <p>
+                        <span> <span class="glyphicon glyphicon-map-marker text-uci-green"></span> Киров, ул. Космонавта Волкова, д. 12</span><br>
+                        <span> <span class="glyphicon glyphicon-map-marker text-uci-blue"></span> Киров, ул. Ломоносова, д. 29</span><br>
+                    </p>
+                    <p>
+                        <span>
+                            <a href="https://maps.yandex.ru/46/kirov/?z=13&ll=49.602652201888354%2C58.600431151271145&l=map&origin=jsapi_2_1_34&from=api-maps&um=constructor%3AbJ8B3pj7AvYLkKM3KC-TL7rmYA61rcqQ" target="_blank">
+                            <span class="glyphicon glyphicon-share "></span> Посмотреть на Яндекс.Картах
+                            </a>
+                        </span>    
+                    </p>    
+                    
+                </address>
             </div>
             
-            
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 pull-left">
-                <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-
-                <!-- VK Widget -->
-                <div id="vk_groups"></div>
-                <script type="text/javascript">
-                VK.Widgets.Group("vk_groups", {mode: 0, width: "auto", height: "400", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 86529149);
-                </script>
-                <hr class="visible-xs">
-            </div> 
-                  
-          </div>
-         
-    
-        <div class="row">
-            
+            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs ">
+                <br>
+                <blockquote>
+                    <p class="text-muted">Когда я вижу взрослого человека на велосипеде, я спокоен за человечество!</p>
+                <footer>Герберт Уэллс</footer>
+                </blockquote>
+            </div>
         </div>
+           
     </div>
+    
     
 </section>
 

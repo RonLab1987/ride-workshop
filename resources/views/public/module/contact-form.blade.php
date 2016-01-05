@@ -7,7 +7,7 @@
         </div-->  
         <div class="row">  
           <div class="container">  
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0">
+          <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0">
               <h2 class="section-heading text-center text-white">Быстрый способ</h2>
               <!--p class="lead  text-uppercase text-white "><br>Всего 1 клик чтобы сделать заказ или задать вопрос. Мы перезвоним вам в течении пары минут для уточнения деталей.</p-->
               <p class="lead  text-uppercase text-white text-center ">
