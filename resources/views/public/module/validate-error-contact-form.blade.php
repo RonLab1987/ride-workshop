@@ -4,7 +4,7 @@
         
         <div class="row">  
           <div class="container">  
-          <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12 col-lg-offset-0 col-md-offset-0">
+          <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 col-lg-offset-0 col-md-offset-0">
               <h2 class="section-heading text-center text-white">Oops!</h2> 
               <p class="text-center text-white text-uppercase">
                   Есть
