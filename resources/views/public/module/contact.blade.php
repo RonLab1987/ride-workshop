@@ -49,7 +49,7 @@
             </div>
             
             <div class="col-lg-4 col-md-4 hidden-sm hidden-xs ">
-                <br>
+                
                 <blockquote>
                     <p class="text-muted">Когда я вижу взрослого человека на велосипеде, я спокоен за человечество!</p>
                 <footer>Герберт Уэллс</footer>

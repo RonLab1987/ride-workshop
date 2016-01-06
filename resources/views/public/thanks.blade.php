@@ -10,24 +10,16 @@
 
     @include('public.module.css-include')
   </head>
-  <body class="bg-darkest-gray" >
-    @include('public.module.price-navbar')
+  <body>
     
-    <section id='phanks' style="padding-top: 70px">
-    <div class="container">
-        <div class="row">
-            <p class="lead text-center text-uppercase text-white">
-                {!! $name !!}, спасибо за тест.<br>
-                +100 к вашей карме ;)
-            </p>
-        </div>
-    </div>
-    </section>   
+    @include('public.module.validate-error-navbar')  
+    @include('public.module.thanks-header') 
+    @include('public.module.thanks-video') 
+    @include('public.module.contact')
+    
     
     
     @include('public.module.js-include')
   </body>
 </html>
-
-
 

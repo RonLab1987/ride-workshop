@@ -88,12 +88,9 @@ class PublicController extends Controller
      */
     public function store(PublicOrder $publicOrder,Request $request)
     {   $formatedPhone = phone_format($request->old('phone'),'RU');
-        $input = $request->old();
-        dd('прокатило', $request->old(), $request->old('phone'),$formatedPhone, $input);
-        ////dd($input, $rules);
-        //dd($request->only('phone','name','comment'));
-        //$publicOrder->create($request->only('phone','name','comment'));
-        //return view('public.phanks',['name'=>$request['name']]);
+        //dd('прокатило', $request->old(), $request->old('phone'),$formatedPhone, $input);
+        return view('public.thanks',['input'=>$request->old(), 'phone' =>$formatedPhone]);
+        //return view('public.thanks');
     }
     
     

@@ -29,6 +29,11 @@
     //color: #ECF0F1;
 }
 
+.text-clouds{
+    color: #ECF0F1;
+    //color: #ECF0F1;
+}
+
 .text-uci-blue{
     color: @uci-blue;
 }
@@ -104,6 +109,44 @@
         }
 } 
 
+.thanks-header {
+	
+        background-color: #2980B9;
+        
+        .thanks-message{
+            padding-top: 0px;
+            padding-bottom: 50px;
+        }
+        
+        .phone{
+            white-space: pre;
+        }
+	
+        h1{
+            padding-bottom: 30px;
+        }
+}
+
+@media(min-width:500px){
+            .thanks-header {
+                background-image: url('../../image/bike4.jpeg');
+                //background-image: url('../../image/header-bg.jpg');
+                background-repeat: none;
+                background-attachment: fixed;
+                background-position: top right;
+                .background-cover;
+                
+                .thanks-message{
+                    padding-top: 50px;
+                    padding-bottom: 100px;
+                }
+                
+                h1{
+                    padding-bottom: 50px;
+                }
+        }
+} 
+
 
 .price-head {
 	background-image: url('../../image/sky-car3.jpg');
@@ -164,4 +207,16 @@
 			}
 		}
 	}
+}
+
+.thanks-video{
+    background-color: @uci-black;
+    color: white;
+
+}
+
+.price-list{
+    h4{
+        padding-top: 60px;
+    }
 }
