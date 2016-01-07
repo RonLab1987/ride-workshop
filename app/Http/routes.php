@@ -15,14 +15,16 @@ Route::get('/', function () {
     return view('public.homepage');
 });
  
- 
-Route::get('/price', function () {
-    return view('public.price-list');
+ */
+Route::get('страница-для-лёхи', function () {
+    return view('public.lexa');
 });
-*/
+
 get('/',['as'=>'homepage','uses'=>'PublicController@index']);
 get('цены-на-обслуживание',['as'=>'priceList','uses'=>'PublicController@priceList']);
 
 post ('валидация-данных',['as'=>'orderValidate', 'uses'=>'PublicController@inputValidator']);
 get('исправьте-данные',['as'=>'validateError','uses'=>'PublicController@validateError']);
 get('заказ-принят',['as'=>'orderStore','uses'=>'PublicController@store']);
+
+
