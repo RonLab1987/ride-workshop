@@ -1,6 +1,6 @@
 
-<!--section id="contact-form"  class="contact-form"-->
-<header>    
+<section id="contact-form"  class="contact-form">
+<!--header-->    
         <!--div class="row text-center">
             <h2 class="section-heading">один клик <small>или</small> один звонок</h2>
             <h3 class="section-subheading">Веломастерская всего в 1 клике или 1 звонке. </h3>
@@ -92,5 +92,5 @@
           </div>
         </div>
         </div>
-</header>        
-<!--/section-->
+<!--/header-->        
+</section>
