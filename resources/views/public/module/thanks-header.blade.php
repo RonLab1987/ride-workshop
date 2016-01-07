@@ -19,11 +19,11 @@
                     
                     <a href="#thanks-video" class="page-scroll btn btn-xl btn-uci-green "><span class="hidden-xs">у меня</span> есть 5 минут <span class="glyphicon glyphicon-chevron-right "></span></a>
                 </div-->
-                <header>
+                <header class="thanks-header">
                     <div class="container">
                         <div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
                         
-                            <h1 class="text-white">заявка принята</h1>
+                            <h1 class="thanks-header-h1">заявка принята</h1>
                             <?php
                                 $input = array('name'=>'василий'); $phone='+7 (912) 337-01-02'
                             ?>
