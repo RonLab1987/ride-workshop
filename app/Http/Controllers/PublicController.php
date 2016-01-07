@@ -87,10 +87,10 @@ class PublicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(PublicOrder $publicOrder,Request $request)
-    {   $formatedPhone = phone_format($request->old('phone'),'RU');
+    {   //$formatedPhone = phone_format($request->old('phone'),'RU');
         //dd('прокатило', $request->old(), $request->old('phone'),$formatedPhone, $input);
-        return view('public.thanks',['input'=>$request->old(), 'phone' =>$formatedPhone]);
-        //return view('public.thanks');
+        //return view('public.thanks',['input'=>$request->old(), 'phone' =>$formatedPhone]);
+        return view('public.thanks');
     }
     
     
