@@ -1,4 +1,4 @@
-<div  class="price-head" id="page-top">
+<header  class="price-head" id="page-top">
         <div class="container">
             <div class="intro-text">
                 
@@ -10,4 +10,4 @@
                 <a href="{!! route('homepage') !!}#contact-form" class=" btn btn-xl btn-uci-green ">Всего 1 клик <span class="glyphicon glyphicon-chevron-right "></span></a>
             </div>
         </div>
-</div>
+</header>

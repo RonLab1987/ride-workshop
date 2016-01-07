@@ -10,7 +10,7 @@
 
     @include('public.module.css-include')
   </head>
-  <body>
+  <body class="validate-error-body">
     <?php
         //var_dump($errors->all()) ;
         //var_dump($oldInput);

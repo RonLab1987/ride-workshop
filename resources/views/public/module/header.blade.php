@@ -1,4 +1,4 @@
-<header id="page-top">
+<header id="page-top" class="homepage-header">
         <div class="container">
             <div class="intro-text">
                 

@@ -1,10 +1,11 @@
 <?php /*var_dump($oldInput)*/ ?>
-<section id="contact-form"  class="validate-error-contact-form">
+<section id="contact-form"  class="validate-error-header">
     
         
         <div class="row">  
           <div class="container">  
           <div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 col-lg-offset-0 col-md-offset-0">
+              <div class="error-form">
               <h2 class="section-heading text-center text-white">Oops!</h2> 
               <p class="text-center text-white text-uppercase">
                   Есть
@@ -90,7 +91,7 @@
                     <span class="glyphicon glyphicon-phone"></span> 43-45-95<br>
                 </p>
                     
-                    
+              </div>       
           </div>
         </div>
         </div>
