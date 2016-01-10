@@ -40,7 +40,7 @@
                                 </label>
                             </div-->
                             
-                            <small id="phone-example" class="text-muted">пример: 912 000-43-21 / +7(833)2 43-45-95</small>
+                            <small id="phone-example" class="text-muted">пример: 912 337-07-70 или 43-45-95</small>
                             <input class="form-control input-lg" type="tel" id="phone" name="phone" placeholder="Ваш телефон" value="" >
                             
                             <!--span id="phone-example" class="text-muted">Например: 912 000-43-21 или +7(833)2 43-45-95</span-->

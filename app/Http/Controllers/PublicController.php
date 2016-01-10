@@ -10,6 +10,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use App\Http\Controllers\Controller;
 
 use App\PublicOrder;
+use \Session;
 use Validator;
 
 class PublicController extends Controller
@@ -40,17 +41,42 @@ class PublicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function inputValidator(PublicOrder $publicOrder,Request $request)
-    {   //dd($request->all());
-       //$input = $request->only('phone','name');
+    {   
+        
+       $input = $request->all();
+       
+       if(strlen($input['phone'])>0){
+           $validatePhone = $input['phone'];
+        
+        // dd($validatePhone);
+        $validatePhoneCrop="";
+
+         for($i=0; $i < strlen($validatePhone); $i++){
+             if(is_numeric($validatePhone[$i])){
+                 $validatePhoneCrop .= $validatePhone[$i];
+             }
+         }
+
+         if(strlen($validatePhoneCrop) == 6){
+             $validatePhoneCrop = "(833)2" . $validatePhoneCrop;
+             $input['phone'] = $validatePhoneCrop;
+         }
+         // dd($validatePhoneCrop);
+       }
+       
         $rules = array(
             'name' => 'required',
             'phone' => array('required','phone:RU'));
         $messages = array(
             'name.required' => 'Вы не указали ваше имя',
             'phone.required' => 'Вы не указали ваш телефон',
-            'phone.phone' => 'Неверный формат телефона.'
+            'phone.phone' => 'Укажите телефон в федеральном формате. Например 9123370770 или (833)243-45-95'
         );
-        $validation = Validator::make($request->all(), $rules, $messages);
+        //$validation = Validator::make($request->all(), $rules, $messages);
+        //dd($input);
+        
+        $validation = Validator::make($input, $rules, $messages);
+        
         
         if($validation->fails()){
             //$er = $validation->messages();
@@ -60,9 +86,10 @@ class PublicController extends Controller
         }
         else{
             //$formatedPhone = phone_format($request['phone'],'RU');
-            //$this->store($publicOrder,$request);
+            $input['phone'] = phone_format($input['phone'],'RU');
+            //$this->store($publicOrder,$input);
             //dd('прокатило',$validation->fails(), $request->all());
-            return redirect()->route('orderStore')->withInput();
+            return redirect()->route('orderStore')->with( $input);
         }
     }
     
@@ -86,11 +113,19 @@ class PublicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(PublicOrder $publicOrder,Request $request)
-    {   //$formatedPhone = phone_format($request->old('phone'),'RU');
-        //dd('прокатило', $request->old(), $request->old('phone'),$formatedPhone, $input);
-        //return view('public.thanks',['input'=>$request->old(), 'phone' =>$formatedPhone]);
-        return view('public.thanks');
+    public function store(PublicOrder $publicOrder)
+    {   
+        $input = Session::all();
+        /*
+        if(\Session::has($input2)){
+            dd('прокатило' );
+        }
+        else{
+            dd(' не прокатило');
+        }*/
+       // dd('прокатило', );
+        return view('public.thanks',['input'=>$input]);
+        //return view('public.thanks');
     }
     
     

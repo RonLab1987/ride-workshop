@@ -139,9 +139,23 @@
         }
 } 
 
+
+.thanks-body{
+    background-image: url('../../image/bike4-cr.jpeg');
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: top center;
+}
+@media(min-width:768px){
+            .thanks-body {
+                background-image: url('../../image/bike4.jpeg');
+                
+        }
+}    
+
 .thanks-header {
-	background-image: url('../../image/bike4.jpeg');
-        background-color: #2980B9;
+	//background-image: url('../../image/bike4.jpeg');
+        //background-color: #2980B9;
         padding: 70px 0px ;
         
         .thanks-message{
@@ -188,19 +202,19 @@
 .thanks-video{
     background-color: #000;
     color: white;
-    .lead {
+    /*.lead {
         padding-top: 30px;
         padding-bottom: 10px;
         
-    }
+    }*/
 }
 
 @media(min-width:768px) {
     .thanks-video{
-        .lead {
+        /*.lead {
             padding-top: 100px;
             padding-bottom: 0px;   
-        }
+        }*/
     }
 }
 

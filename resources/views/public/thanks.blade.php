@@ -10,11 +10,11 @@
 
     @include('public.module.css-include')
   </head>
-  <body>
+  <body class="thanks-body">
     
     @include('public.module.validate-error-navbar')  
     @include('public.module.thanks-header') 
-    @include('public.module.thanks-video') 
+    
     @include('public.module.contact')
     
     
