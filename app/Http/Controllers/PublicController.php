@@ -101,6 +101,7 @@ class PublicController extends Controller
      */
     public function validateError(Request $request)
     {   //dd($request->old());
+        Session::reflash();
         return view('public.validate-error',['oldInput'=>$request->old()]);
         
     }
@@ -116,6 +117,7 @@ class PublicController extends Controller
     public function store(PublicOrder $publicOrder)
     {   
         $input = Session::all();
+        Session::reflash();
         /*
         if(\Session::has($input2)){
             dd('прокатило' );
