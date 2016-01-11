@@ -40,10 +40,10 @@ class PublicController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function inputValidator(PublicOrder $publicOrder,Request $request)
+    public function validateData($input)
     {   
         
-       $input = $request->all();
+       //$input = $request->all();
        
        if(strlen($input['phone'])>0){
            $validatePhone = $input['phone'];
@@ -72,25 +72,11 @@ class PublicController extends Controller
             'phone.required' => 'Вы не указали ваш телефон',
             'phone.phone' => 'Укажите телефон в федеральном формате. Например 9123370770 или (833)243-45-95'
         );
-        //$validation = Validator::make($request->all(), $rules, $messages);
-        //dd($input);
         
-        $validation = Validator::make($input, $rules, $messages);
+        $validateData= array('input'=>$input, 'rules' => $rules, 'messages'=>$messages);
+        return $validateData;
         
         
-        if($validation->fails()){
-            //$er = $validation->messages();
-            //dd('Ашибкама',$input, $er->all(), $validation->messages(), $validation->failed());
-            //$url = route('validateError');
-            return redirect()->route('validateError')->withInput()->withErrors($validation);
-        }
-        else{
-            //$formatedPhone = phone_format($request['phone'],'RU');
-            $input['phone'] = phone_format($input['phone'],'RU');
-            //$this->store($publicOrder,$input);
-            //dd('прокатило',$validation->fails(), $request->all());
-            return redirect()->route('orderStore')->with( $input);
-        }
     }
     
     
@@ -114,20 +100,25 @@ class PublicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(PublicOrder $publicOrder)
+    public function store(PublicOrder $publicOrder,Request $request)
     {   
-        $input = Session::all();
+        
         Session::reflash();
-        /*
-        if(\Session::has($input2)){
-            dd('прокатило' );
+        
+        $input = $request->all();
+        $validateData = $this->validateData($input);
+        
+        $validation = Validator::make($validateData['input'], $validateData['rules'], $validateData['messages']);
+        
+        if($validation->fails()){
+            return redirect()->route('validateError')->withInput()->withErrors($validation);
         }
         else{
-            dd(' не прокатило');
-        }*/
-       // dd('прокатило', );
-        return view('public.thanks',['input'=>$input]);
-        //return view('public.thanks');
+            
+            $validateData['input']['phone'] = phone_format($validateData['input']['phone'],'RU');
+            return view('public.thanks',['input'=>$validateData['input']]);
+        }
+        
     }
     
     

@@ -37,15 +37,15 @@
             </div>
             
             
-            <div class="row text-center">
+            <div class="row ">
                 
                 <div class="col-md-4">
-                    <div class=" panel panel-primary">
-                    <div class="panel-heading"> 
+                    <div class=" panel panel-primary" >
+                    <div class="panel-heading text-center"> 
                         <h4 class="service-heading">Увозим <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Привозим</h4>
                     </div>
-                    <div class="panel-body"
-                    <p class="text-muted">Забираем велосипед из любого района Кирова, производим обслуживание, привозим ваш велосипед туда и когда вам удобно. </p>
+                    <div class="panel-body">
+                    <p class="text-muted">Забираем велосипед из любого района Кирова, производим обслуживание, привозим ваш велосипед обратно. <!-- туда и когда вам удобно. --> </p>
                     <hr>
                     <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-1'>ВЫБРАТЬ</a>
                     </div>
@@ -53,10 +53,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
-                    <div class="panel-heading"> 
+                    <div class="panel-heading text-center"> 
                         <h4 class="service-heading">Приезжаем <span class="glyphicon glyphicon-arrow-right"></span> Делаем </h4> 
                     </div>
-                    <div class="panel-body"
+                    <div class="panel-body">
                     <p class="text-muted">С нашими навыкам и оборудованием многие работы можем выполнить прямо на месте в течении одного часа.</p>
                     <hr>
                     <a href="#contact-form" class="btn btn-block  btn-uci-green page-scroll" id='order-type-2'>ВЫБРАТЬ</a>
@@ -65,10 +65,10 @@
                 </div>
                 <div class="col-md-4">
                     <div class=" panel panel-primary">
-                    <div class="panel-heading"> 
+                    <div class="panel-heading text-center"> 
                     <h4 class="service-heading">Отдаёте <span class="glyphicon glyphicon-arrow-right"></span> Делаем <span class="glyphicon glyphicon-arrow-right"></span> Забираете</h4>
                     </div>
-                    <div class="panel-body"
+                    <div class="panel-body">
                     <p class="text-muted">Вам удобнее самим привезти велосипед? Ждём вас в <a href="#contact-data">наших точках приема</a>. Оформите заявку и мы договоримся о времени. </p>
                     <hr>
                     

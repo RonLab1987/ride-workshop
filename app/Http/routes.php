@@ -23,8 +23,9 @@ Route::get('страница-для-лёхи', function () {
 get('/',['as'=>'homepage','uses'=>'PublicController@index']);
 get('цены-на-работу',['as'=>'priceList','uses'=>'PublicController@priceList']);
 
-post ('валидация-данных',['as'=>'orderValidate', 'uses'=>'PublicController@inputValidator']);
+//post ('валидация-данных',['as'=>'orderValidate', 'uses'=>'PublicController@inputValidator']);
 get('исправьте-данные',['as'=>'validateError','uses'=>'PublicController@validateError']);
-get('заявка-принята',['as'=>'orderStore','uses'=>'PublicController@store']);
+//get('заявка-принята',['as'=>'orderStore','uses'=>'PublicController@store']);
 
+post ('заявка-принята',['as'=>'orderValidate', 'uses'=>'PublicController@store']);
 

@@ -10,9 +10,10 @@
                         <h1 class="text-white">заявка принята</h1>
                       
 
-                        <p class="lead text-white text-uppercase">{{$input['name']}}, спасибо.</p>
+                        <p class="lead text-white text-uppercase">{{$input['name']}} ( {{$input['phone']}} ) , спасибо. </p>
                                    
-                        <p class="text-white text-uppercase">        
+                        <p class="text-white text-uppercase">
+                            Скоро мы вам перезвоним.
                             а сейчас немного мотивации для вас <span class="glyphicon glyphicon-play-circle"></span> 
                         </p>
                         
