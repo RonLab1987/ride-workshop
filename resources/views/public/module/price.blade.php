@@ -1,11 +1,23 @@
-<section id="price-list" class="">
+<section id="price-list" class="price-list">
     <div class="container">
         <div class="col-md-12">
             <h2 class="section-heading text-center">Цены на работу</h2>
             <h3 class="section-subheading text-center text-muted">Ниже перечислены наиболее часто встречающиеся виды работ, цены указаны в рублях.</h3>
-
+            
+            <ol class="breadcrumb">
+                <!--li><span class="text-muted text-lowercase">КАТЕГОРИИ</span> </li-->
+                <li><span class="text-muted text-lowercase">КАТЕГОРИИ </span><a class="page-scroll" href="#delivery">Доставка</a></li>
+                <li><a class="page-scroll" href="#break">Тормоза</a></li>
+                <li><a class="page-scroll" href="#transmission">Трансмиссия</a></li>
+                <li><a class="page-scroll" href="#wheels">Колёса</a></li>
+                <li><a class="page-scroll" href="#fork">Вилка</a></li>
+                <li><a class="page-scroll" href="#frame">Рама</a></li>
+                <li><a class="page-scroll" href="#other">Прочее</a></li>
+            </ol>
+            
             <div>
-                <hr><h4>ДОСТАВКА</h4>
+                <span id="delivery"></span>
+                <hr><h4 >ДОСТАВКА</h4>
                 <table class="table table-striped">
                 <tbody>
                 <tr >
@@ -19,7 +31,8 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>ТОРМОЗНАЯ СИСТЕМА</h4>
+                <span id="break"></span>
+                <hr><h4 id="">ТОРМОЗНАЯ СИСТЕМА</h4>
                 <table class="table table-striped">
                 <tbody>
                 <tr>
@@ -57,7 +70,10 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>ТРАНСМИССИЯ</h4>
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                <span id="transmission"></span>
+                
+                <hr><h4 id="">ТРАНСМИССИЯ</h4>
                 <p class="lead">СИСТЕМА ПЕРЕКЛЮЧЕНИЯ</p>
                 <table class="table table-striped">
                 <tbody>
@@ -174,7 +190,10 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>КОЛЁСА</h4>
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                <span id="wheels"></span>
+                
+                <hr><h4 id="">КОЛЁСА</h4>
                 <table class="table table-striped">
                 <tbody>
                 <tr>
@@ -228,7 +247,10 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>ВИЛКА</h4>
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                <span id="fork"></span>
+                
+                <hr><h4 id="">ВИЛКА</h4>
                 <table class="table table-striped">
                 <tbody>
                 <tr>
@@ -282,7 +304,11 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>РАМА</h4>
+                
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                <span id="frame"></span>
+                
+                <hr><h4 id="">РАМА</h4>
                 <table class="table table-striped">
                 <tbody>
                 <tr>
@@ -304,7 +330,11 @@
                 </tbody>
                 </table>
                 
-                <hr><h4>ПРОЧЕЕ</h4>
+                
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                <span id="other"></span>
+                
+                <hr><h4 id="">ПРОЧЕЕ</h4>
                 <p class="lead">СБОРКА ВЕЛОСИПЕДА</p>
                 <table class="table table-striped">
                 <tbody>
@@ -344,7 +374,7 @@
                 </tr>
                 <tr>
                 <td>Установка багажника без консольных отверстий на раме</td>
-                <td>От 500</td>
+                <td>от 500</td>
                 </tr>
                 </tbody>
                 </table>
@@ -420,6 +450,9 @@
                 </tr>
                 </tbody>
                 </table>
+                
+                <p class="text-center"><a href="#page-top" class="page-scroll btn btn-default btn-xs"><span class="glyphicon glyphicon-chevron-up text-muted"></span></a></p>
+                
                 
             </div>
         </div>
