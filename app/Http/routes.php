@@ -29,3 +29,9 @@ get('исправьте-данные',['as'=>'validateError','uses'=>'PublicCont
 
 post ('заявка-принята',['as'=>'orderValidate', 'uses'=>'PublicController@store']);
 
+get('все-заявки',['as'=>'allPublicOrders','uses'=>'WorkshopController@index' ]);
+
+/*
+Route::get('все-заявки', function () {
+    echo 'все-заявки';
+});*/

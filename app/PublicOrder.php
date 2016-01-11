@@ -15,4 +15,9 @@ class PublicOrder extends Model
         $this->order_type = $input['order-type'];
         $this->save();
     }
+    
+    public function getAllOrders() {
+        $result = $this->select('id','phone','name','comment','order_type','created_at')->orderBy('created_at', 'DESC')->get();
+        return $result;
+    }
 }
