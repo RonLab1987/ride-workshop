@@ -27,7 +27,7 @@
             <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 ">
                 <address>
                     <p>
-                        <span class="text-muted"><small><em>приехать</em></small></span><br>
+                        <span class="text-muted"><small><em>точки приёма</em></small></span><br>
                         <span ><small>
                             Необходимо договориться о времени.<br>
                             <a href="#contact-form" class="page-scroll">Оформите заявку на сайте </a> или по телефону.</small>

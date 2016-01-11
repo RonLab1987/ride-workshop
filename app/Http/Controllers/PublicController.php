@@ -116,6 +116,7 @@ class PublicController extends Controller
         else{
             
             $validateData['input']['phone'] = phone_format($validateData['input']['phone'],'RU');
+            $publicOrder->saveOrder($validateData['input']);            
             return view('public.thanks',['input'=>$validateData['input']]);
         }
         
