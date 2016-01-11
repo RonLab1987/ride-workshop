@@ -29,6 +29,11 @@
     //color: #ECF0F1;
 }
 
+.text-clouds{
+    color: #ECF0F1;
+    //color: #ECF0F1;
+}
+
 .text-uci-blue{
     color: @uci-blue;
 }
@@ -47,11 +52,20 @@
 
 .bg-uci-red{
     background-color: @uci-red;
-    color: white;
-    .h1, .h2, .h3, .h4 {
-        color: white;
-    }
 }
+.bg-uci-green{
+    background-color: @uci-green;
+}
+.bg-uci-blue{
+    background-color: @uci-blue;
+}
+.bg-uci-black{
+    background-color: @uci-black;
+}
+.bg-uci-yellow{
+    background-color: @uci-yellow;
+}
+
 
 //ПОНЕСЛОСЬ ВСЯКОГО
 
@@ -72,71 +86,155 @@
 .contact-form {
 	//background-image: url('../../image/workshop-white.jpg');
         //background-image: url('../../image/mtb.jpg');
-	background-image: url('../../image/forest.jpg');
-	background-repeat: none;
-	background-attachment: fixed;
-	background-position: top center;
-	.background-cover;
+	//background-image: url('../../image/forest.jpg');
+        background-color: darken(@uci-green, 10%);
+        background-image: url('../../image/forest.jpg');
+        //background-image: url('../../image/footer_lodyas_green.png');
+        //background-repeat: repeat;
+        background-color: #2ECC71;
+        
+	
 }
+/*
+@media(min-width:500px){
+            .contact-form {
+                background-image: url('../../image/forest.jpg');
+                /*background-repeat: none;
+                background-attachment: fixed;
+                background-position: center center;
+                .background-cover;
+        }
+} */
+
+.homepage-header{
+    background-image: url('../../image/header-bg2.jpg');
+    background-color: #3498DB;
+}
+
+.validate-error-body{
+    background-image: url('../../image/bike4-cr.jpeg');
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: top center;
+}
+@media(min-width:768px){
+            .validate-error-body {
+                background-image: url('../../image/bike4.jpeg');
+                
+        }
+}        
+
+.validate-error-header {
+        padding: 70px 0px ;
+	//background-image: url('../../image/bike4-cr.jpeg');
+        //background-color: #27AE60;
+        
+	
+}
+
+@media(min-width:768px){
+            .validate-error-header {
+                //background-image: url('../../image/bike4.jpeg');
+                padding: 100px 0px ;
+        }
+} 
+
+
+.thanks-body{
+    background-image: url('../../image/bike4-cr.jpeg');
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: top center;
+}
+@media(min-width:768px){
+            .thanks-body {
+                background-image: url('../../image/bike4.jpeg');
+                
+        }
+}    
+
+.thanks-header {
+	//background-image: url('../../image/bike4.jpeg');
+        //background-color: #2980B9;
+        padding: 70px 0px ;
+        
+        .thanks-message{
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+        
+        .phone{
+            white-space: pre;
+        }
+	
+        .thanks-header-h1{
+            padding-bottom: 30px;
+        }
+}
+
+@media(min-width:768px){
+            .thanks-header {
+                padding: 100px 0px ;
+                
+                .thanks-message{
+                    padding-top: 50px;
+                    padding-bottom: 20px;
+                }
+                
+                .thanks-header-h1{
+                    padding-bottom: 50px;
+                }
+        }
+} 
 
 
 .price-head {
 	background-image: url('../../image/sky-car3.jpg');
-	background-repeat: none;
-	background-attachment: scroll;
-	background-position: top center;
-	.background-cover;
 	text-align: right;
-	color: white;
+}
+
+.price-list{
+    h4{
+        padding-top: 60px;
+    }
+}
+
+.thanks-video{
+    background-color: #000;
+    color: white;
+    /*.lead {
+        padding-top: 30px;
+        padding-bottom: 10px;
         
-        
-	.intro-text {
-                
-		padding-top: 100px;
-		padding-bottom: 50px;
-                
-                
-                
-		.intro-lead-in {
-			.serif-font;
-                        //.heading-font;
-                        //font-style: normal;
-			//font-style: bold;
-                        font-weight: 600;
-			font-size: 20px;
-                        line-height: 20px;
-			margin-bottom: 40px;
-		}
-		.intro-heading {
-			.heading-font;
-			font-weight: 700;
-			font-size: 50px;
-			line-height: 50px;
-			margin-bottom: 15px;
-		}
-	}
+    }*/
 }
 
 @media(min-width:768px) {
-	.price-head {
-		.intro-text {
-                        
-			padding-top: 300px;
-			padding-bottom: 200px;
-			.intro-lead-in {
-				.serif-font;
-				font-style: italic;
-				font-size: 40px;
-				line-height: 40px;
-				margin-bottom: 75px;
-			}
-			.intro-heading {
-				.heading-font;
-				font-weight: 700;
-				font-size: 75px;
-				line-height: 75px;
-				margin-bottom: 20px;
-			}
-		}
-	}
+    .thanks-video{
+        /*.lead {
+            padding-top: 100px;
+            padding-bottom: 0px;   
+        }*/
+    }
 }
+
+html, body{
+    height: 100%; width: 100%;
+    /*background-image: url('../../image/bike4.jpeg');
+    background-repeat: none;
+    background-attachment: fixed;
+    background-position: center top;
+    .background-cover;*/
+}
+
+.lexa-page {
+    background-image: url('../../image/sativa.png');
+    //background-image: url('../../image/congruent_pentagon.png');
+    background-repeat: repeat;
+   
+   
+    
+}
+
+
+

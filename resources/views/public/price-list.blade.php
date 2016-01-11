@@ -14,6 +14,7 @@
     @include('public.module.price-navbar')
     @include('public.module.price-header') 
     @include('public.module.price') 
+    @include('public.module.contact')
     
     
     @include('public.module.js-include')

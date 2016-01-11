@@ -169,7 +169,11 @@ h1, h2, h3, h4, h5, h6 {
 
 header {//background-image: url('../../image/julien-absalon.jpg');
 	//background-image: url('../../image/header-bg.jpg');
-	background-image: url('../../image/header-bg2.jpg');
+	//background-image: url('../../image/header-bg2.jpg');
+        
+        height: 100%; width: 100%; 
+        //min-width: 100%;
+        
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: right top;
@@ -177,6 +181,9 @@ header {//background-image: url('../../image/julien-absalon.jpg');
 	text-align: left;
 	color: white;
         
+        span{
+            padding: 0 10px;
+        }
         
 	.intro-text {
                 
@@ -187,9 +194,9 @@ header {//background-image: url('../../image/julien-absalon.jpg');
                 
 		.intro-lead-in {
 			.serif-font;
-                        //.heading-font;
-                        //font-style: normal;
-			//font-style: bold;
+                        .heading-font;
+                        font-style: italic;
+			font-style: bold;
                         font-weight: 600;
 			font-size: 20px;
                         line-height: 20px;
@@ -233,6 +240,7 @@ header {//background-image: url('../../image/julien-absalon.jpg');
 
 section {
     padding: 70px 0px ;
+       
     //padding: 100px 0px;
     h2.section-heading {
 		font-size: 40px;
@@ -248,6 +256,7 @@ section {
 		font-weight: 400;
 		margin-bottom: 50px;
     }
+    
    
 }
 
