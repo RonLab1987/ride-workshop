@@ -12,13 +12,16 @@ use App\Http\Controllers\Controller;
 use App\PublicOrder;
 use \Session;
 use Validator;
+use Mail;
+
 
 class PublicController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * 
+     * 
+     * Главная страница Катай.рф
+     * 
      */
     public function index()
     {
@@ -26,9 +29,9 @@ class PublicController extends Controller
     }
     
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * 
+     * 
+     *  Страница Цены-на-работу
      */
     public function priceList()
     {
@@ -36,9 +39,9 @@ class PublicController extends Controller
     }
     
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * 
+     * 
+     *  Формирую массив для валидатора
      */
     public function validateData($input)
     {   
@@ -75,15 +78,31 @@ class PublicController extends Controller
         
         $validateData= array('input'=>$input, 'rules' => $rules, 'messages'=>$messages);
         return $validateData;
-        
-        
     }
     
+    public function orderEmail($input){
+       Mail::send('email.new-order',['input' => $input], function($message){
+            $message->to('ride43@yandex.ru')->subject('Новая заявка');
+        });
+        /*
+        Mail::raw("Test message",function($message){
+            //$message->from('me@ride43.ru','me');
+            $message->to('roman@artnetdesign.ru')->subject('Новая заявка');
+        } );*/
+        
+     /*if(mail("ronlab@yandex.ru", "test", $input['phone'])){
+         echo "send";
+     };*/
+    }
+
     
+
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * 
+     * В случае ошибки валидации формы заявки 
+     * вывожу страницу /исправьте-данные 
+     * с ошибками и старым вводом
+     * 
      */
     public function validateError(Request $request)
     {   //dd($request->old());
@@ -95,10 +114,9 @@ class PublicController extends Controller
     
 
     /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * Сохранение данных заявки
+     * с предварительной валидацией данных
+     * 
      */
     public function store(PublicOrder $publicOrder,Request $request)
     {   
@@ -113,12 +131,13 @@ class PublicController extends Controller
         if($validation->fails()){
             return redirect()->route('validateError')->withInput()->withErrors($validation);
         }
-        else{
-            
-            $validateData['input']['phone'] = phone_format($validateData['input']['phone'],'RU');
-            $publicOrder->saveOrder($validateData['input']);            
-            return view('public.thanks',['input'=>$validateData['input']]);
-        }
+       
+        $validateData['input']['phone'] = phone_format($validateData['input']['phone'],'RU');
+        //$publicOrder->saveOrder($validateData['input']);            
+        $this->orderEmail($validateData['input']);
+        
+        
+        return view('public.thanks',['input'=>$validateData['input']]);
         
     }
     
