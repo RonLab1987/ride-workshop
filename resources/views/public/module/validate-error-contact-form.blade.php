@@ -63,7 +63,7 @@
                         <div class="form-group">
                         <!--label class="form-control" for="comment">комментарий, пожелание или вопрос</label-->
                         <small id="" class="text-muted">пример:  "<span class="hidden-xs">Привет из пустынь Татуина.</span> А фэт-байки делаете?"</small>
-                        <textarea type="" rows="4" class="form-control input-lg" id="comment" name="comment" placeholder="Ваш вопрос, пожелание или ,например, адрес, куда подъехать за велосипедом... ">{!!$oldInput['comment']!!}</textarea>
+                        <textarea type="" rows="4" class="form-control input-lg" id="comment" name="comment" placeholder="Ваш вопрос, пожелание или, например, адрес, куда подъехать за велосипедом... ">{!!$oldInput['comment']!!}</textarea>
                         
                             
                         </div>
