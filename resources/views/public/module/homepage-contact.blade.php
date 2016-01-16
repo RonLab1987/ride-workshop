@@ -17,7 +17,7 @@
                     <p>
                         <span class="text-muted"><small><em>написать</em></small></span><br>
                         <!--span class=""><small>когда вам угодно</small></span><br-->
-                        <span><a href="{!! route('homepage') !!}#contact-form" class="page-scroll"><span class="glyphicon glyphicon-plane text-uci-green"></span> На сайте </a></span>
+                        <span><a href="#contact-form" class="page-scroll"><span class="glyphicon glyphicon-plane text-uci-green"></span> На сайте </a></span>
                         &nbsp;
                         <span><a href="https://vk.com/ron_vk" target="_blank"> <span class="glyphicon glyphicon-share "></span> ВКонтакте</a></span>
                     </p>
@@ -30,7 +30,7 @@
                         <span class="text-muted"><small><em>точки приёма</em></small></span><br>
                         <span ><small>
                             Необходимо договориться о времени.<br>
-                            <a href="{!! route('homepage') !!}#contact-form" class="page-scroll">Оформите заявку на сайте </a> или по телефону.</small>
+                            <a href="#contact-form" class="page-scroll">Оформите заявку на сайте </a> или по телефону.</small>
                         </span>
                     </p>
                     <p>

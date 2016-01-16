@@ -16,7 +16,7 @@
     @include('public.module.services')
     @include('public.module.contact-form')
     @include('public.module.command')
-    @include('public.module.contact')
+    @include('public.module.homepage-contact')
       
     @include('public.module.js-include')
   
