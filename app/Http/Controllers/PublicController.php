@@ -84,15 +84,7 @@ class PublicController extends Controller
        Mail::send('email.new-order',['input' => $input], function($message){
             $message->to('ride43@yandex.ru')->subject('Новая заявка');
         });
-        /*
-        Mail::raw("Test message",function($message){
-            //$message->from('me@ride43.ru','me');
-            $message->to('roman@artnetdesign.ru')->subject('Новая заявка');
-        } );*/
         
-     /*if(mail("ronlab@yandex.ru", "test", $input['phone'])){
-         echo "send";
-     };*/
     }
 
     
@@ -133,7 +125,7 @@ class PublicController extends Controller
         }
        
         $validateData['input']['phone'] = phone_format($validateData['input']['phone'],'RU');
-        //$publicOrder->saveOrder($validateData['input']);            
+        $publicOrder->saveOrder($validateData['input']);            
         $this->orderEmail($validateData['input']);
         
         
