@@ -3,7 +3,12 @@
 <!-- Services Section -->
 <div id="services">
     <section class="bg-primary">
+        
+        
         <div class="container">
+            
+            
+            
             <div class="row">
                 <div class="col-lg-12 text-center">
                      <!--h2 class="section-heading">ВЕЛОМАСТЕРСКАЯ</h2-->
@@ -27,6 +32,7 @@
     
     <section class="bg-light-gray" id='options'>
         <div class="container">
+            
             
             <div class="text-center ">
                     <h2 class="section-heading">вы выбираете</h2>
