@@ -6,9 +6,11 @@
 
 
 
-body {
-	overflow-x: hidden;
-	.body-font;
+body {  
+        
+    height: 100%;
+    overflow-x: hidden;
+    .body-font;
 }
 
 .text-muted {
@@ -182,19 +184,16 @@ filter: FlipH;
 		.navbar-brand {
 	        font-size: 1.5em;
 	    }    
+            
 	}
 }
 
-header {//background-image: url('../../image/julien-absalon.jpg');
-	//background-image: url('../../image/header-bg.jpg');
-	//background-image: url('../../image/header-bg2.jpg');
-        
-        height: 100%; width: 100%; 
-        //min-width: 100%;
-        
-	background-repeat: none;
+header {
+    min-height: 100%;
+    position: relative;
+	background-repeat: no-repeat;
 	background-attachment: scroll;
-	background-position: right top;
+	background-position: left center;
 	.background-cover;
 	text-align: left;
 	color: white;
