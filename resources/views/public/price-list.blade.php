@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>ВелоМастерская "КАТАЙ!" г. Киров</title>
 
-    @include('public.module.css-include')
+    
   </head>
   <body>
     @include('public.module.price-navbar')
@@ -16,7 +16,7 @@
     @include('public.module.price') 
     @include('public.module.contact')
     
-    
+    @include('public.module.css-include')
     @include('public.module.js-include')
   </body>
 </html>

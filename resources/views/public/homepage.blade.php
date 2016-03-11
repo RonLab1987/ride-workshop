@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>«КАТАЙ!» Веломастерская. Ремонт и обслуживание велосипедов. Киров.</title>
 
-    @include('public.module.css-include')
+    
   </head>
   <body>
     @include('public.module.navbar')
@@ -17,7 +17,8 @@
     @include('public.module.contact-form')
     @include('public.module.command')
     @include('public.module.homepage-contact')
-      
+    
+    @include('public.module.css-include')
     @include('public.module.js-include')
   
   </body>

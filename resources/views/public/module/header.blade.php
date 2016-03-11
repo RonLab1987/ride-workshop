@@ -6,7 +6,7 @@
                 
                 <h1>Вело&shy;мастерская </h1>
                 
-                <h2>Ремонт&ensp;и&ensp;обслуживание велосипедов в кирове </h2>
+                <h2>Ремонт&ensp;и&ensp;обслуживание велосипедов в г. киров </h2>
                 
                 <div class="pull-left " style="padding: 10px; margin-bottom: 25px; border: 2px solid #fff; ">
                    
