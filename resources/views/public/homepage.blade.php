@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Keywords" content="веломастерская, велосервис, ремонт, велосипед, горный, детский, шоссейный, город, Киров, Кировская область"/>
     <meta name="Description" content="Мобильная веломастерская «КАТАЙ!». Ремонтируем и обслуживаем велосипеды в г. Кирове с выездом к вашему дому."/>
-    <link rel="canonical" href="http://xn--80aa1ab5b.xn--p1ai/"/>
+    <link rel="canonical" href="RideUp.ru"/>
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Веломастерская «КАТАЙ!». Ремонт и обслуживание велосипедов в г. Киров.</title>
