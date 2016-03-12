@@ -4,11 +4,13 @@
 
 // Global Components
 
-
+html, body{
+   height: 100%; 
+}
 
 body {  
         
-    height: 100%;
+    
     overflow-x: hidden;
     .body-font;
 }
@@ -97,8 +99,8 @@ filter: FlipH;
 	.heading-font;
 	font-weight: 700;
 	border-radius: 3px;
-	font-size: 18px;
-	padding: 20px 40px;
+	font-size: 16px;
+	padding: 15px 20px;
         margin-bottom: 10px;
         margin-left: 5px;
 }
@@ -205,58 +207,128 @@ header {
        
         
 	.intro-text {
+            
+            .intro-area{
+                background-color: rgba(0,0,0, .5); 
+                padding: 0 10px 10px 10px; 
+                border-radius: 5px;
+            }
                 
 		padding-top: 100px;
-		padding-bottom: 50px;
-                text-shadow: 0 0 15px rgba(0,0,0, .5);
+		padding-bottom: 70px;
+                /*text-shadow: 0 0 15px rgba(0,0,0, .5);*/
                 
-                .utp{
-                    color: #3498DB;
+                .h-container{
+                    position: relative;
+                    left: -20px;
+                    box-shadow: 2px 2px 2px rgba(0,0,0, .5);
+                    position: relative;
+                    display: inline-block; 
+                    background-color: #f44;
+                    padding: 15px;
+                    margin-bottom: 25px;
+                    .clearfix;
                 }
+                .h-container:before {
+                                content: '';
+                                position: absolute;
+                                left: 0px;
+                                top: -10px;
+                                border: 5px solid transparent;
+                                border-right: 5px solid #d33;
+                                border-bottom: 5px solid #d33;
+                        } 
+                
                 
 		h2 {
 			.serif-font;
                         .heading-font;
-                        font-style: italic;
+                        margin: 0;
+                        padding: 0 0 0 5px ;
 			font-style: bold;
                         font-weight: 600;
-			font-size: 20px;
-                        //line-height: 21px;
-			margin-bottom: 20px;
+			font-size: 16px;
+                       // text-shadow: 2px 2px 2px rgba(0,0,0, .5);                        
+                        text-transform: none; 
                         
 		}
+               
 		h1 {
 			.heading-font;
+                        margin: 0;
+                        padding: 0 ;
 			font-weight: 700;
-			font-size: 35px;
-			line-height: 35px;
-			margin-bottom: 15px;
-                      //  text-shadow: 0 0 15px rgba(0,0,0, .5);
+			font-size: 30px;
+                        text-shadow: 1px 1px 2px rgba(0,0,0, .5);
                         word-wrap: break-word;
+                        
+                        
 		}
+                  
+                
+                
 	}
+}
+
+header:after{
+    font-family: 'Glyphicons Halflings';
+    position: absolute;
+    margin: 0 50%;
+    bottom: 20px;
+    text-align: center;
+    display: block;
+    color: #fff; 
+    font-size: 25px;
+    font-weight: 700;
+    
+    content: "\e114";
 }
 
 @media(min-width:768px) {
 	header {
+            
+            
 		.intro-text {
                         
+                    .intro-area{
+                        background-color: rgba(0,0,0, .5); 
+                        padding: 0 15px 10px 15px; 
+                        border-radius: 5px;
+                        border: none;
+                    }
+                    
 			padding-top: 160px;
-			padding-bottom: 200px;
+			//padding-bottom: 200px;
+                        .h-container{
+                            left: -28px;
+                            margin-bottom: 25px;
+                        }
+                        .h-container:before {
+                                top: -14px;
+                                border: 7px solid transparent;
+                                border-right: 7px solid #d33;
+                                border-bottom: 7px solid #d33;
+                                
+                        } 
+                        
+                        .a-container{
+                            padding-left: 20px;
+                        }
+                        
 			h2 {
-				.serif-font;
-				font-style: italic;
-				font-size: 40px;
-				//line-height: 40px;
-				margin-bottom: 40px;
+                            font-size: 25px;
+                            padding: 0 0 0 10px ;
+				
 			}
+                       
 			h1 {
-				.heading-font;
 				font-weight: 700;
 				font-size: 75px;
-				line-height: 75px;
-				margin-bottom: 20px;
 			}
+                        
+                        
+                        
+                        
 		}
 	}
 }

@@ -17,11 +17,12 @@
   <body>
     @include('public.module.navbar')
     @include('public.module.header')
+    
     @include('public.module.services')
     @include('public.module.contact-form')
     @include('public.module.command')
     @include('public.module.homepage-contact')
-    
+     
     @include('public.module.css-include')
     @include('public.module.js-include')
   

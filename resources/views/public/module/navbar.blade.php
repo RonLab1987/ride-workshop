@@ -13,8 +13,7 @@
                 </button>
                 
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <!--img class="img-responsive" src="/image/logo-key-30px.png"-->
-                    <img class="img-responsive" src="/image/logo.svg" style="height: 20px;">
+                    <img class="img-responsive" src="/image/logo-key-30px.png">
                     
                 </a>
             </div>
