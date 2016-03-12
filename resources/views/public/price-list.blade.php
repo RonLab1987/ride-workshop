@@ -11,7 +11,7 @@
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Веломастерская «КАТАЙ!». Цены на ремонт и обслуживание велосипеда в г. Киров.</title>
-
+    @include('public.module.css-include')   
     
   </head>
   <body>
@@ -20,7 +20,7 @@
     @include('public.module.price') 
     @include('public.module.contact')
     
-    @include('public.module.css-include')
+    
     @include('public.module.js-include')
   </body>
 </html>
