@@ -10,7 +10,7 @@
                 <h1>Вело&shy;мастерская </h1>
                 
                 <div class="h-container">
-                    <img class="" src="/image/logo.svg" title="Веломастерская «КАТАЙ!»" >
+                    <img class="" src="/image/logo-name-120px.png" title="Веломастерская «КАТАЙ!»" >
                     <p>
                         Катайтесь, а обслуживание велосипеда доверьте нам
                     </p>
@@ -23,6 +23,6 @@
                 </div>
                      
             </div>
-       
+    </div>   
         
 </header>
