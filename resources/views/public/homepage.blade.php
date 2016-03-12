@@ -11,6 +11,7 @@
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Веломастерская «КАТАЙ!». Ремонт и обслуживание велосипедов в г. Киров.</title>
+    
     @include('public.module.css-include') 
     
   </head>
