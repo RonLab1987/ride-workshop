@@ -5,7 +5,7 @@
                 <div class="intro-area" >
                 <span class="contact">
                     <span class="glyphicon glyphicon-phone-alt"></span>43-45-95<br>
-                    <a class="page-scroll" href="#contact-data">все контакты</a>
+                    <a class="page-scroll addon" href="#contact-data">все контакты</a>
                 </span>
                 <h1>Вело&shy;мастерская </h1>
                 
@@ -15,7 +15,9 @@
                         Катайтесь, а обслуживание велосипеда доверьте нам
                     </p>
                 </div>
-                 <h2>РЕМОНТ&ensp;И&ensp;ОБСЛУЖИВАНИЕ ВЕЛОСИПЕДОВ В г.&nbsp;КИРОВ С ВЫЕЗДОМ К ВАШЕМУ ДОМУ </h2>    
+                <h2 style="display: inline">РЕМОНТ&ensp;И&ensp;ОБСЛУЖИВАНИЕ ВЕЛОСИПЕДОВ В г.&nbsp;КИРОВ С ВЫЕЗДОМ К ВАШЕМУ ДОМУ </h2> 
+                <a class="page-scroll addon" href="#options">еще варианты</a>
+                 
                 <div class="a-container">
                     <a href="#services" class="page-scroll btn btn-xl btn-uci-blue">ПОДРОБНЕЕ</a>
                     <a href="#contact-form" class="page-scroll btn btn-xl btn-uci-green ">оформить заявку <span class="glyphicon glyphicon-chevron-right hidden-xs"></span></a>

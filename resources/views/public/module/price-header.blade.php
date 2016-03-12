@@ -4,7 +4,7 @@
                 <div class="intro-area" >
                 <span class="contact">
                     <span class="glyphicon glyphicon-phone-alt"></span>43-45-95<br>
-                    <a class="page-scroll" href="#contact-data">все контакты</a>
+                    <a class="page-scroll addon" href="#contact-data">все контакты</a>
                 </span>
                 <h1>Вело&shy;мастерская </h1>
                 
