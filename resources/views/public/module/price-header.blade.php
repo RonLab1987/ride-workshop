@@ -18,8 +18,8 @@
                      ВЫЕЗД НА РЕМОНТ ИЛИ ДОСТАВКА ВЕЛОСИПЕДА ПО г.&nbsp;КИРОВ от 0 до 100 р.
                  </h2>
                 <div class="a-container">
-                    <a href="#services" class="page-scroll btn btn-xl btn-uci-blue">ПОДРОБНЕЕ</a>
-                    <a href="#contact-form" class="page-scroll btn btn-xl btn-uci-green ">оформить заявку <span class="glyphicon glyphicon-chevron-right hidden-xs"></span></a>
+                    <a href="{!! route('homepage') !!}#services" class="page-scroll btn btn-xl btn-uci-blue">ПОДРОБНЕЕ</a>
+                    <a href="{!! route('homepage') !!}#contact-form" class="page-scroll btn btn-xl btn-uci-green ">оформить заявку <span class="glyphicon glyphicon-chevron-right hidden-xs"></span></a>
                 </div>
                 </div>
                      
