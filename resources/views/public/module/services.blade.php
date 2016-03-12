@@ -27,6 +27,7 @@
                     
                 </div>
         </div>
+       </div>
     </section>        
     
     
@@ -98,16 +99,7 @@
                     
                 </div>    
           
-            <!--hr>
-            <div class="text-center">
-                <a href="" class="text-uci-black">#ЦЕНЫ НА РАБОТУ |</a> 
-                <a href="" class="text-uci-black">#КОНТАКТЫ | </a> 
-                <a href="" class="text-uci-black" >#ЗАКАЗАТЬ В 2 КЛИКА</a>
-            </div>
-            <hr>
-            <!--div class="text-center text-uci-blue">
-                <h4>ВЕЛОМАСТЕРСКАЯ НА РАССТОЯНИИ ОДНОГО ЗВОНКА</h4>
-            </div-->
+            
         
         </div>
     </section>
